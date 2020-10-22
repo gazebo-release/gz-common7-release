@@ -1,3 +1,9 @@
+ignition-common3 (3.7.0-1~stretch) stretch; urgency=medium
+
+  * ignition-common3 3.7.0-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Thu, 22 Oct 2020 12:25:40 -0500
+
 ignition-common3 (3.6.1-1~stretch) stretch; urgency=medium
 
   * ignition-common3 3.6.1-1 release
