@@ -10,6 +10,7 @@ Build-Depends: cmake,
                libfreeimage-dev,
                libignition-cmake2-dev,
                libignition-math6-dev,
+               libignition-utils-dev,
                libtinyxml2-dev,
                uuid-dev,
                libgts-dev,
@@ -38,6 +39,7 @@ Package: libignition-common4-core-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
+         libignition-utils-dev,
          uuid-dev,
          libignition-common4 (= ${binary:Version}),
          ${misc:Depends}
@@ -85,6 +87,7 @@ Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common4-core-dev,
+         libignition-utils-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
@@ -120,6 +123,7 @@ Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common4-core-dev,
+         libignition-utils-dev,
          libignition-math6-dev,
          libignition-common4-events (= ${binary:Version}),
          ${misc:Depends}
@@ -152,6 +156,7 @@ Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common4-core-dev,
          libignition-math6-dev,
+         libignition-utils-dev,
          libtinyxml2-dev,
          libgts-dev,
          libignition-common4-graphics (= ${binary:Version}),
