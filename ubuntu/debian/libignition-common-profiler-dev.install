@@ -2,5 +2,5 @@ usr/include/ignition/common*/ignition/common/profiler/*
 usr/lib/*/cmake/ignition-common[0-99]-profiler/*
 usr/lib/*/libignition-common[0-99]-profiler.so
 usr/lib/*/pkgconfig/ignition-common[0-99]-profiler.pc
+usr/lib/*/ignition/ignition-common[0-99]/*
 usr/share/ignition/ignition-common[0-99]/profiler_vis/*
-usr/bin/ign_remotery_vis
