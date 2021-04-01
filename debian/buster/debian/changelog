@@ -1,30 +1,6 @@
-ignition-common4 (4.0.0-1~buster) buster; urgency=medium
-
-  * ignition-common4 4.0.0-1 release
-
- -- Louise Poubel <louise@openrobotics.org>  Wed, 31 Mar 2021 09:43:58 -0700
-
-ignition-common4 (4.0.0~pre2-1~buster) buster; urgency=medium
-
-  * ignition-common4 4.0.0~pre2-1 release
-
- -- Michael Carroll <michael@openrobotics.org>  Fri, 26 Mar 2021 12:43:25 -0500
-
-ignition-common4 (4.0.0~pre1-1~buster) buster; urgency=medium
-
-  * ignition-common4 4.0.0~pre1-1 release
-
- -- Michael Carroll <michael@openrobotics.org>  Mon, 22 Mar 2021 18:59:06 -0500
-
-ignition-common4 (4.0.0~pre1-1~buster) buster; urgency=medium
-
-  * ignition-common4 4.0.0~pre1-1 release
-
- -- Michael Carroll <mjcarroll@dalinar>  Mon, 22 Mar 2021 18:58:49 -0500
-
-ignition-common4 (3.999.999-1~buster) buster; urgency=medium
+ignition-common5 (4.999.999-1~buster) buster; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Louise Poubel <louise@openrobotics.org>  Thu, 29 Oct 2020 11:02:25 -0700
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 01 Apr 2021 15:22:48 -0700
 

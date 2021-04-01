@@ -1,4 +1,4 @@
-Source: ignition-common4
+Source: ignition-common5
 Standards-Version: 3.9.8
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
@@ -19,11 +19,11 @@ Build-Depends: cmake,
                libavcodec-dev,
                libswscale-dev,
                libavutil-dev
-Vcs-Browser: https://github.com/ignition-release/ign-common4-release
-Vcs-Git: https://github.com/ignition-release/ign-common4-release
+Vcs-Browser: https://github.com/ignition-release/ign-common5-release
+Vcs-Git: https://github.com/ignition-release/ign-common5-release
 Homepage: http://ignitionrobotics.org/
 
-Package: libignition-common4
+Package: libignition-common5
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -35,16 +35,16 @@ Description: Ignition Common classes and functions for robot apps - Shared libra
  .
  Main shared library
 
-Package: libignition-common4-core-dev
+Package: libignition-common5-core-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-utils1-dev,
          uuid-dev,
-         libignition-common4 (= ${binary:Version}),
+         libignition-common5 (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (core) - Development files
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -52,14 +52,14 @@ Description: Ignition Common classes and functions (core) - Development files
  .
  Core development files
 
-Package: libignition-common4-dev
+Package: libignition-common5-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-common4-core-dev,
-         libignition-common4-av-dev,
-	 libignition-common4-events-dev,
-	 libignition-common4-graphics-dev,
-	 libignition-common4-profiler-dev,
+Depends: libignition-common5-core-dev,
+         libignition-common5-av-dev,
+	 libignition-common5-events-dev,
+	 libignition-common5-graphics-dev,
+	 libignition-common5-profiler-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Common classes and functions for robot apps - Metapackage
@@ -68,13 +68,13 @@ Description: Ignition Common classes and functions for robot apps - Metapackage
  .
  Metapackage for development
 
-Package: libignition-common4-av
+Package: libignition-common5-av
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (AV) - Shared library
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -82,21 +82,21 @@ Description: Ignition Common classes and functions (AV) - Shared library
  .
  AV component of the library
 
-Package: libignition-common4-av-dev
+Package: libignition-common5-av-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
-         libignition-common4-core-dev,
+         libignition-common5-core-dev,
          libignition-utils1-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
          libswscale-dev,
          libavutil-dev,
-         libignition-common4-av (= ${binary:Version}),
+         libignition-common5-av (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (AV) - Development files
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -104,13 +104,13 @@ Description: Ignition Common classes and functions (AV) - Development files
  .
  AV component of the library, development files
 
-Package: libignition-common4-events
+Package: libignition-common5-events
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (Events) - Shared library
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -118,17 +118,17 @@ Description: Ignition Common classes and functions (Events) - Shared library
  .
  Events component of the library
 
-Package: libignition-common4-events-dev
+Package: libignition-common5-events-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
-         libignition-common4-core-dev,
+         libignition-common5-core-dev,
          libignition-utils1-dev,
          libignition-math6-dev,
-         libignition-common4-events (= ${binary:Version}),
+         libignition-common5-events (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (Events) - Development files
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -136,13 +136,13 @@ Description: Ignition Common classes and functions (Events) - Development files
  .
  Events component of the library, development files
 
-Package: libignition-common4-graphics
+Package: libignition-common5-graphics
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (Graphics) - Shared library
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -150,19 +150,19 @@ Description: Ignition Common classes and functions (Graphics) - Shared library
  .
  Graphics component of the library
 
-Package: libignition-common4-graphics-dev
+Package: libignition-common5-graphics-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
-         libignition-common4-core-dev,
+         libignition-common5-core-dev,
          libignition-math6-dev,
          libignition-utils1-dev,
          libtinyxml2-dev,
          libgts-dev,
-         libignition-common4-graphics (= ${binary:Version}),
+         libignition-common5-graphics (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (Graphics) - Development files
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -170,13 +170,13 @@ Description: Ignition Common classes and functions (Graphics) - Development file
  .
  Graphics component of the library, development files
 
-Package: libignition-common4-profiler
+Package: libignition-common5-profiler
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (Profiler) - Shared library
  Ignition Common is a component in the ignition framework, a set of libraries
@@ -184,15 +184,15 @@ Description: Ignition Common classes and functions (Profiler) - Shared library
  .
  Profiler component of the library
 
-Package: libignition-common4-profiler-dev
+Package: libignition-common5-profiler-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
-         libignition-common4-core-dev,
-         libignition-common4-profiler (= ${binary:Version}),
+         libignition-common5-core-dev,
+         libignition-common5-profiler (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common4-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
 Multi-Arch: same
 Description: Ignition Common classes and functions (profiler) - Development files
  Ignition Common is a component in the ignition framework, a set of libraries
