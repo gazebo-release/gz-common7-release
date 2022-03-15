@@ -8,6 +8,7 @@ Build-Depends: cmake,
                debhelper (>= 9),
                doxygen,
                libfreeimage-dev,
+               libgdal-dev,
                libignition-cmake2-dev,
                libignition-math7-dev,
                libignition-utils1-dev,
@@ -58,6 +59,7 @@ Section: libdevel
 Depends: libignition-common5-core-dev (= ${binary:Version}),
          libignition-common5-av-dev (= ${binary:Version}),
          libignition-common5-events-dev (= ${binary:Version}),
+         libignition-common5-geospatial-dev (= ${binary:Version}),
          libignition-common5-graphics-dev (= ${binary:Version}),
          libignition-common5-profiler-dev (= ${binary:Version}),
          ${misc:Depends}
@@ -135,6 +137,39 @@ Description: Ignition Common classes and functions (Events) - Development files
  designed to rapidly develop robot applications.
  .
  Events component of the library, development files
+
+Package: libignition-common5-geospatial
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Multi-Arch: same
+Description: Ignition Common classes and functions (Geospatial) - Shared library
+ Ignition Common is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Geospatial component of the library
+
+Package: libignition-common5-geospatial-dev
+Architecture: any
+Section: libdevel
+Depends: libgdal-dev,
+         libignition-cmake2-dev,
+         libignition-common5-graphics-dev (= ${binary:Version}),
+         libignition-math7-dev,
+         libignition-utils1-dev,
+         libignition-common5-geospatial (= ${binary:Version}),
+         ${misc:Depends}
+Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Multi-Arch: same
+Description: Ignition Common classes and functions (Geospatial) - Development files
+ Ignition Common is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Geospatial component of the library, development files
 
 Package: libignition-common5-graphics
 Architecture: any
