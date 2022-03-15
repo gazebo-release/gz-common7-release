@@ -19,7 +19,7 @@ Build-Depends: cmake,
                libavcodec-dev,
                libswscale-dev,
                libavutil-dev
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-common
+Vcs-Browser: https://github.com/ignitionrobotics/ign-common
 Vcs-Git: https://github.com/ignition-release/ign-common5-release
 Standards-Version: 4.5.1
 Homepage: http://ignitionrobotics.org/
