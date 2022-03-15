@@ -2,10 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ignition-common
 Upstream-Contact: gazebo-list@gazebosim.org
 Source: https://bitbucket.org/ignitionrobotics/ign_common
-Files-Excluded: test/gtest
-                test/data
-                graphics/src/tinyxml2
-                graphics/src/tiny_obj_loader.h
 
 Files: *
 Copyright: 2014-2021, Open Source Robotics Foundation
