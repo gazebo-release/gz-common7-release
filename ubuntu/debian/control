@@ -10,7 +10,7 @@ Build-Depends: cmake,
                libgdal-dev,
                libignition-cmake2-dev,
                libignition-math7-dev,
-               libignition-utils1-dev,
+               libignition-utils2-dev,
                libtinyxml2-dev,
                uuid-dev,
                libgts-dev,
@@ -42,7 +42,7 @@ Package: libignition-common5-core-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
-         libignition-utils1-dev,
+         libignition-utils2-dev,
          uuid-dev,
          libignition-common5 (= ${binary:Version}),
          ${misc:Depends}
@@ -95,7 +95,7 @@ Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common5-core-dev (= ${binary:Version}),
-         libignition-utils1-dev,
+         libignition-utils2-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
@@ -133,7 +133,7 @@ Architecture: any
 Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common5-core-dev (= ${binary:Version}),
-         libignition-utils1-dev,
+         libignition-utils2-dev,
          libignition-math7-dev,
          libignition-common5-events (= ${binary:Version}),
          ${misc:Depends}
@@ -171,7 +171,7 @@ Depends: libgdal-dev,
          libignition-cmake2-dev,
          libignition-common5-graphics-dev (= ${binary:Version}),
          libignition-math7-dev,
-         libignition-utils1-dev,
+         libignition-utils2-dev,
          libignition-common5-geospatial (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -203,7 +203,7 @@ Section: libdevel
 Depends: libignition-cmake2-dev,
          libignition-common5-core-dev (= ${binary:Version}),
          libignition-math7-dev,
-         libignition-utils1-dev,
+         libignition-utils2-dev,
          libtinyxml2-dev,
          libgts-dev,
          libignition-common5-graphics (= ${binary:Version}),
