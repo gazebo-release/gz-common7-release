@@ -8,7 +8,7 @@ Build-Depends: cmake,
                doxygen,
                libfreeimage-dev,
                libgdal-dev,
-               libignition-cmake2-dev,
+               libignition-cmake3-dev,
                libignition-math7-dev,
                libignition-utils2-dev,
                libtinyxml2-dev,
@@ -41,7 +41,7 @@ Description: Collection of useful code used by robotics apps - Shared library
 Package: libignition-common5-core-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake3-dev,
          libignition-utils2-dev,
          uuid-dev,
          libignition-common5 (= ${binary:Version}),
@@ -93,7 +93,7 @@ Description: Collection of useful code used by robotics apps - AV libraries
 Package: libignition-common5-av-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake3-dev,
          libignition-common5-core-dev (= ${binary:Version}),
          libignition-utils2-dev,
          libavdevice-dev,
@@ -131,7 +131,7 @@ Description: Collection of useful code used by robotics apps - Events libraries
 Package: libignition-common5-events-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake3-dev,
          libignition-common5-core-dev (= ${binary:Version}),
          libignition-utils2-dev,
          libignition-math7-dev,
@@ -168,7 +168,7 @@ Package: libignition-common5-geospatial-dev
 Architecture: any
 Section: libdevel
 Depends: libgdal-dev,
-         libignition-cmake2-dev,
+         libignition-cmake3-dev,
          libignition-common5-graphics-dev (= ${binary:Version}),
          libignition-math7-dev,
          libignition-utils2-dev,
@@ -200,7 +200,7 @@ Description: Collection of useful code used by robotics apps - Graphics librarie
 Package: libignition-common5-graphics-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake3-dev,
          libignition-common5-core-dev (= ${binary:Version}),
          libignition-math7-dev,
          libignition-utils2-dev,
@@ -236,7 +236,7 @@ Description: Collection of useful code used by robotics apps - Profiler libs
 Package: libignition-common5-profiler-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake2-dev,
+Depends: libignition-cmake3-dev,
          libignition-common5-core-dev (= ${binary:Version}),
          libignition-common5-profiler (= ${binary:Version}),
          ${misc:Depends}
