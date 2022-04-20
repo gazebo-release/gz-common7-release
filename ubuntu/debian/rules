@@ -14,6 +14,7 @@ override_dh_install:
 	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/events.hh
 	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/geospatial.hh
 	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/graphics.hh
+	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/testing.hh
 	dh_missing --list-missing
 
 # test cannot run in parallel

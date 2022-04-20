@@ -1,0 +1,5 @@
+usr/include/ignition/common*/ignition/common/testing.hh
+usr/include/ignition/common*/ignition/common/testing/*
+usr/lib/*/cmake/ignition-common[0-99]-testing/*
+usr/lib/*/libignition-common[0-99]-testing.so
+usr/lib/*/pkgconfig/ignition-common[0-99]-testing.pc

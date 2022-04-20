@@ -64,6 +64,7 @@ Depends: libignition-common5-core-dev (= ${binary:Version}),
          libignition-common5-geospatial-dev (= ${binary:Version}),
          libignition-common5-graphics-dev (= ${binary:Version}),
          libignition-common5-profiler-dev (= ${binary:Version}),
+         libignition-common5-testing-dev (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Metapackage
@@ -250,3 +251,33 @@ Description: Collection of useful code used by robotics apps - Profiler dev file
  parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Profiler development files
+
+Package: libignition-common5-testing
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: Collection of useful code used by robotics apps - Testing libries
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
+ .
+ Testing component of the library
+
+Package: libignition-common5-testing-dev
+Architecture: any
+Section: libdevel
+Depends: libignition-cmake3-dev,
+         libignition-utils2-dev,
+         libignition-common5-testing (= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Description: Collection of useful code used by robotics apps - Testing dev files
+ Ignition common is a component in the Ignition framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
+ .
+ Testing developement files
