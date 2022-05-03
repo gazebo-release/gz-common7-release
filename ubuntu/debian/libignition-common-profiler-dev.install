@@ -1,4 +1,5 @@
 usr/include/ignition/common*/ignition/common/profiler/*
+usr/include/ignition/common*/gz/common/profiler/*
 usr/lib/*/cmake/ignition-common[0-99]-profiler/*
 usr/lib/*/libignition-common[0-99]-profiler.so
 usr/lib/*/pkgconfig/ignition-common[0-99]-profiler.pc

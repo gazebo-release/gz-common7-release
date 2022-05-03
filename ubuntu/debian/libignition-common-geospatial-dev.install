@@ -1,5 +1,7 @@
 usr/include/ignition/common*/ignition/common/geospatial.hh
 usr/include/ignition/common*/ignition/common/geospatial/*
+usr/include/ignition/common*/gz/common/geospatial.hh
+usr/include/ignition/common*/gz/common/geospatial/*
 usr/lib/*/cmake/ignition-common[0-99]-geospatial/*
 usr/lib/*/libignition-common[0-99]-geospatial.so
 usr/lib/*/pkgconfig/ignition-common[0-99]-geospatial.pc
