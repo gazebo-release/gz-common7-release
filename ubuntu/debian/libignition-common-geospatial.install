@@ -1,1 +1,1 @@
-usr/lib/*/libignition-common[0-99]-geospatial.so.*
+usr/lib/*/lib*-common[0-99]-geospatial.so.*

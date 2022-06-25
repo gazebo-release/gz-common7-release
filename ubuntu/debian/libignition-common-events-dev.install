@@ -1,7 +1,5 @@
-usr/include/ignition/common*/ignition/common/events.hh
-usr/include/ignition/common*/ignition/common/events/*
-usr/include/ignition/common*/gz/common/events.hh
-usr/include/ignition/common*/gz/common/events/*
-usr/lib/*/cmake/ignition-common[0-99]-events/*
-usr/lib/*/libignition-common[0-99]-events.so
-usr/lib/*/pkgconfig/ignition-common[0-99]-events.pc
+usr/include/*/common*/*/common/events.hh
+usr/include/*/common*/*/common/events/*
+usr/lib/*/cmake/*-common[0-99]-events/*
+usr/lib/*/lib*-common[0-99]-events.so
+usr/lib/*/pkgconfig/*-common[0-99]-events.pc

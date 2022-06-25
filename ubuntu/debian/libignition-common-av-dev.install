@@ -1,7 +1,5 @@
-usr/include/ignition/common*/ignition/common/av.hh
-usr/include/ignition/common*/ignition/common/av/*
-usr/include/ignition/common*/gz/common/av.hh
-usr/include/ignition/common*/gz/common/av/*
-usr/lib/*/cmake/ignition-common[0-99]-av/*
-usr/lib/*/libignition-common[0-99]-av.so
-usr/lib/*/pkgconfig/ignition-common[0-99]-av.pc
+usr/include/*/common*/*/common/av.hh
+usr/include/*/common*/*/common/av/*
+usr/lib/*/cmake/*-common[0-99]-av/*
+usr/lib/*/lib*-common[0-99]-av.so
+usr/lib/*/pkgconfig/*-common[0-99]-av.pc
