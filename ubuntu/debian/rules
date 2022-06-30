@@ -10,16 +10,16 @@ override_dh_auto_configure:
 override_dh_install:
 	dh_install --
 	# need to remove files present in components
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/av.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/events.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/geospatial.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/graphics.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/ignition/common/testing.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/gz/common/av.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/gz/common/events.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/gz/common/geospatial.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/gz/common/graphics.hh
-	$(RM) debian/libignition-common5-core-dev/usr/include/ignition/common*/gz/common/testing.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/ignition/common/av.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/ignition/common/events.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/ignition/common/geospatial.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/ignition/common/graphics.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/ignition/common/testing.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/gz/common/av.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/gz/common/events.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/gz/common/geospatial.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/gz/common/graphics.hh
+	$(RM) debian/libgz-common5-core-dev/usr/include/ignition/common*/gz/common/testing.hh
 	dh_missing --list-missing
 
 # test cannot run in parallel

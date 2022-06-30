@@ -1,4 +1,4 @@
-Source: ignition-common5
+Source: gz-common5
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -8,9 +8,9 @@ Build-Depends: cmake,
                doxygen,
                libfreeimage-dev,
                libgdal-dev,
-               libignition-cmake3-dev,
-               libignition-math7-dev,
-               libignition-utils2-dev,
+               libgz-cmake3-dev,
+               libgz-math7-dev,
+               libgz-utils2-dev,
                libtinyxml2-dev,
                uuid-dev,
                libgts-dev,
@@ -24,11 +24,13 @@ Vcs-Git: https://github.com/gazebo-release/gz-common5-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libignition-common5
+Package: libgz-common5
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5 (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5 (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Shared library
  Gazebo common is a component in the Gazebo framework, a set of
@@ -38,14 +40,16 @@ Description: Collection of useful code used by robotics apps - Shared library
  .
  This package gathers the shared library
 
-Package: libignition-common5-core-dev
+Package: libgz-common5-core-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-utils2-dev,
+Depends: libgz-cmake3-dev,
+         libgz-utils2-dev,
          uuid-dev,
-         libignition-common5 (= ${binary:Version}),
+         libgz-common5 (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common5-core-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-core-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Core dev files
  Gazebo common is a component in the Gazebo framework, a set of
@@ -55,17 +59,19 @@ Description: Collection of useful code used by robotics apps - Core dev files
  .
  Core development files
 
-Package: libignition-common5-dev
+Package: libgz-common5-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-common5-core-dev (= ${binary:Version}),
-         libignition-common5-av-dev (= ${binary:Version}),
-         libignition-common5-events-dev (= ${binary:Version}),
-         libignition-common5-geospatial-dev (= ${binary:Version}),
-         libignition-common5-graphics-dev (= ${binary:Version}),
-         libignition-common5-profiler-dev (= ${binary:Version}),
-         libignition-common5-testing-dev (= ${binary:Version}),
+Depends: libgz-common5-core-dev (= ${binary:Version}),
+         libgz-common5-av-dev (= ${binary:Version}),
+         libgz-common5-events-dev (= ${binary:Version}),
+         libgz-common5-geospatial-dev (= ${binary:Version}),
+         libgz-common5-graphics-dev (= ${binary:Version}),
+         libgz-common5-profiler-dev (= ${binary:Version}),
+         libgz-common5-testing-dev (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common5-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Metapackage
  Gazebo common is a component in the Gazebo framework, a set of
@@ -75,13 +81,13 @@ Description: Collection of useful code used by robotics apps - Metapackage
  .
  Metapackage for development.
 
-Package: libignition-common5-av
+Package: libgz-common5-av
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-av (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-av (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - AV libraries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -91,19 +97,21 @@ Description: Collection of useful code used by robotics apps - AV libraries
  .
  AV component of the library
 
-Package: libignition-common5-av-dev
+Package: libgz-common5-av-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-common5-core-dev (= ${binary:Version}),
-         libignition-utils2-dev,
+Depends: libgz-cmake3-dev,
+         libgz-common5-core-dev (= ${binary:Version}),
+         libgz-utils2-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
          libswscale-dev,
          libavutil-dev,
-         libignition-common5-av (= ${binary:Version}),
+         libgz-common5-av (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common5-av-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-av-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - AV libraries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -113,13 +121,13 @@ Description: Collection of useful code used by robotics apps - AV libraries
  .
  AV component of the library, development files
 
-Package: libignition-common5-events
+Package: libgz-common5-events
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-events (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-events (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Events libraries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -129,17 +137,17 @@ Description: Collection of useful code used by robotics apps - Events libraries
  .
  Events component of the library
 
-Package: libignition-common5-events-dev
+Package: libgz-common5-events-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-common5-core-dev (= ${binary:Version}),
-         libignition-utils2-dev,
-         libignition-math7-dev,
-         libignition-common5-events (= ${binary:Version}),
+Depends: libgz-cmake3-dev,
+         libgz-common5-core-dev (= ${binary:Version}),
+         libgz-utils2-dev,
+         libgz-math7-dev,
+         libgz-common5-events (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-events-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-events-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Events dev files
  Gazebo common is a component in the Gazebo framework, a set of
@@ -149,13 +157,13 @@ Description: Collection of useful code used by robotics apps - Events dev files
  .
  Events component development files
 
-Package: libignition-common5-geospatial
+Package: libgz-common5-geospatial
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5 (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-geospatial (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-geospatial (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Geospatial libries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -165,16 +173,18 @@ Description: Collection of useful code used by robotics apps - Geospatial librie
  .
  Geospatial component of the library
 
-Package: libignition-common5-geospatial-dev
+Package: libgz-common5-geospatial-dev
 Architecture: any
 Section: libdevel
 Depends: libgdal-dev,
-         libignition-cmake3-dev,
-         libignition-common5-graphics-dev (= ${binary:Version}),
-         libignition-math7-dev,
-         libignition-utils2-dev,
-         libignition-common5-geospatial (= ${binary:Version}),
+         libgz-cmake3-dev,
+         libgz-common5-graphics-dev (= ${binary:Version}),
+         libgz-math7-dev,
+         libgz-utils2-dev,
+         libgz-common5-geospatial (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common5-geospatial-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-geospatial-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Geospatial dev files
  Gazebo common is a component in the Gazebo framework, a set of
@@ -184,11 +194,13 @@ Description: Collection of useful code used by robotics apps - Geospatial dev fi
  .
  Geospatial developement files
 
-Package: libignition-common5-graphics
+Package: libgz-common5-graphics
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5-graphics (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-graphics (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Graphics libraries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -198,19 +210,19 @@ Description: Collection of useful code used by robotics apps - Graphics librarie
  .
  Graphics component of the library
 
-Package: libignition-common5-graphics-dev
+Package: libgz-common5-graphics-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-common5-core-dev (= ${binary:Version}),
-         libignition-math7-dev,
-         libignition-utils2-dev,
+Depends: libgz-cmake3-dev,
+         libgz-common5-core-dev (= ${binary:Version}),
+         libgz-math7-dev,
+         libgz-utils2-dev,
          libtinyxml2-dev,
          libgts-dev,
-         libignition-common5-graphics (= ${binary:Version}),
+         libgz-common5-graphics (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-graphics-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-graphics-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Graphics dev files
  Gazebo common is a component in the Gazebo framework, a set of
@@ -220,11 +232,13 @@ Description: Collection of useful code used by robotics apps - Graphics dev file
  .
  Graphics component development files
 
-Package: libignition-common5-profiler
+Package: libgz-common5-profiler
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5-profiler (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-profiler (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler libs
  Gazebo common is a component in the Gazebo framework, a set of
@@ -234,15 +248,15 @@ Description: Collection of useful code used by robotics apps - Profiler libs
  .
  Profiler component of the library
 
-Package: libignition-common5-profiler-dev
+Package: libgz-common5-profiler-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-common5-core-dev (= ${binary:Version}),
-         libignition-common5-profiler (= ${binary:Version}),
+Depends: libgz-cmake3-dev,
+         libgz-common5-core-dev (= ${binary:Version}),
+         libgz-common5-profiler (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
-Replaces: libignition-common5-dev (<< 3.0.0~pre5+hg20190228r1b2df90990)
+Breaks: libignition-common5-profiler-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-profiler-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler dev file
  Gazebo common is a component in the Gazebo framework, a set of
@@ -252,11 +266,13 @@ Description: Collection of useful code used by robotics apps - Profiler dev file
  .
  Profiler development files
 
-Package: libignition-common5-testing
+Package: libgz-common5-testing
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5-testing (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-testing (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Testing libries
  Gazebo common is a component in the Gazebo framework, a set of
@@ -266,13 +282,15 @@ Description: Collection of useful code used by robotics apps - Testing libries
  .
  Testing component of the library
 
-Package: libignition-common5-testing-dev
+Package: libgz-common5-testing-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-cmake3-dev,
-         libignition-utils2-dev,
-         libignition-common5-testing (= ${binary:Version}),
+Depends: libgz-cmake3-dev,
+         libgz-utils2-dev,
+         libgz-common5-testing (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-common5-testing-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-testing-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Testing dev files
  Gazebo common is a component in the Gazebo framework, a set of
@@ -281,3 +299,123 @@ Description: Collection of useful code used by robotics apps - Testing dev files
  parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Testing developement files
+
+Package: libignition-common5
+Depends: libgz-common5, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-core-dev
+Depends: libgz-common5-core-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-dev
+Depends: libgz-common5-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-av
+Depends: libgz-common5-av, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-av-dev
+Depends: libgz-common5-av-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-events
+Depends: libgz-common5-events, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-events-dev
+Depends: libgz-common5-events-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-geospatial
+Depends: libgz-common5-geospatial, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-geospatial-dev
+Depends: libgz-common5-geospatial-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-graphics
+Depends: libgz-common5-graphics, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-graphics-dev
+Depends: libgz-common5-graphics-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-profiler
+Depends: libgz-common5-profiler, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-profiler-dev
+Depends: libgz-common5-profiler-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-testing
+Depends: libgz-common5-testing, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-testing-dev
+Depends: libgz-common5-testing-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
