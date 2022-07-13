@@ -3,4 +3,4 @@ usr/lib/*/cmake/*-common[0-99]-profiler/*
 usr/lib/*/lib*-common[0-99]-profiler.so
 usr/lib/*/pkgconfig/*-common[0-99]-profiler.pc
 usr/libexec/*/*-common[0-99]/*
-usr/share/ignition/*-common[0-99]/profiler_vis/*
+usr/share/gz/*-common[0-99]/profiler_vis/*

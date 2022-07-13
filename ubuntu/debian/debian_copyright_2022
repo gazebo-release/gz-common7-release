@@ -12,8 +12,8 @@ Files: debian/*
 Copyright: 2012-2021, Jose Luis Rivero
 License: Apache-2
 
-Files: av/include/ignition/common/HWEncoder.hh
-       av/include/ignition/common/HWVideo.hh
+Files: av/include/gz/common/HWEncoder.hh
+       av/include/gz/common/HWVideo.hh
        av/src/HWEncoder.cc
 Copyright: 2020, Martin Pecka
 License: Apache-2
@@ -24,7 +24,7 @@ Files: api.md.in
 Copyright: 2014-2018, Open Source Robotics Foundation
 License: CC-BY-4
 
-Files: include/ignition/common/FlagSet.hh
+Files: include/gz/common/FlagSet.hh
        src/FlagSet_TEST.cc
 Copyright: 2019, Arnaud Kapp (Xaqq), Barry Revzin, Mart Sõmermaa
            2020, Martin Pecka
