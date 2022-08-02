@@ -214,12 +214,13 @@ Description: Collection of useful code used by robotics apps - Graphics librarie
 Package: libgz-common5-graphics-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake3-dev,
+Depends: libassimp-dev,
+         libgts-dev,
+         libgz-cmake3-dev,
          libgz-common5-core-dev (= ${binary:Version}),
          libgz-math7-dev,
          libgz-utils2-dev,
          libtinyxml2-dev,
-         libgts-dev,
          libgz-common5-graphics (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libignition-common5-graphics-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
