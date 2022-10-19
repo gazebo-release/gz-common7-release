@@ -1,3 +1,9 @@
+gz-common5 (5.2.1~pre2-1~focal) focal; urgency=medium
+
+  * gz-common5 5.2.1~pre2-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Wed, 19 Oct 2022 08:39:26 -0700
+
 gz-common5 (5.2.1~pre1-1~focal) focal; urgency=medium
 
   * gz-common5 5.2.1~pre1-1 release
