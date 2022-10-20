@@ -243,7 +243,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Breaks: libignition-common5-io (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Replaces: libignition-common5-io (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
-Description: Collection of useful code used by robotics apps - Graphics libraries
+Description: Collection of useful code used by robotics apps - I/O libraries
  Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
@@ -263,7 +263,7 @@ Depends: libgz-cmake3-dev,
 Breaks: libignition-common5-io-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Replaces: libignition-common5-io-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
 Multi-Arch: same
-Description: Collection of useful code used by robotics apps - Graphics dev files
+Description: Collection of useful code used by robotics apps - I/O dev files
  Gazebo common is a component in the Gazebo framework, a set of
  libraries designed to rapidly develop robot applications. A collection of
  useful classes and functions for handling many command tasks. This includes
