@@ -1,3 +1,9 @@
+gz-common5 (5.2.1-2~jammy) jammy; urgency=medium
+
+  * gz-common5 5.2.1-2 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Thu, 20 Oct 2022 09:46:42 -0700
+
 gz-common5 (5.2.1-1~jammy) jammy; urgency=medium
 
   * gz-common5 5.2.1-1 release
