@@ -68,6 +68,7 @@ Depends: libgz-common5-core-dev (= ${binary:Version}),
          libgz-common5-events-dev (= ${binary:Version}),
          libgz-common5-geospatial-dev (= ${binary:Version}),
          libgz-common5-graphics-dev (= ${binary:Version}),
+         libgz-common5-io-dev (= ${binary:Version}),
          libgz-common5-profiler-dev (= ${binary:Version}),
          libgz-common5-testing-dev (= ${binary:Version}),
          ${misc:Depends}
@@ -234,6 +235,42 @@ Description: Collection of useful code used by robotics apps - Graphics dev file
  .
  Graphics component development files
 
+Package: libgz-common5-io
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-common5-io (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-io (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Multi-Arch: same
+Description: Collection of useful code used by robotics apps - I/O libraries
+ Gazebo common is a component in the Gazebo framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
+ .
+ Graphics component of the library
+
+Package: libgz-common5-io-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake3-dev,
+         libgz-common5-core-dev (= ${binary:Version}),
+         libgz-math7-dev,
+         libgz-utils2-dev,
+         libgz-common5-io (= ${binary:Version}),
+         ${misc:Depends}
+Breaks: libignition-common5-io-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Replaces: libignition-common5-io-dev (<< 4.999.999+nightly+git20220630+1r4416bee895d08f2907d718fea34bbd09df6d0c88-1)
+Multi-Arch: same
+Description: Collection of useful code used by robotics apps - I/O dev files
+ Gazebo common is a component in the Gazebo framework, a set of
+ libraries designed to rapidly develop robot applications. A collection of
+ useful classes and functions for handling many command tasks. This includes
+ parsing 3D mesh files, managing console output, and using PID controllers.
+ .
+ Graphics component development files
+
 Package: libgz-common5-profiler
 Architecture: any
 Section: libs
@@ -384,6 +421,22 @@ Description: transitional package
 
 Package: libignition-common5-graphics-dev
 Depends: libgz-common5-graphics-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-io
+Depends: libgz-common5-io, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-common5-io-dev
+Depends: libgz-common5-io-dev, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
