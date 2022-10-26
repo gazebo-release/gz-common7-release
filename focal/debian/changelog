@@ -1,3 +1,9 @@
+gz-common5 (5.2.2-1~focal) focal; urgency=medium
+
+  * gz-common5 5.2.2-1 release
+
+ -- Michael Carroll <michael@openrobotics.org>  Wed, 26 Oct 2022 16:17:02 -0500
+
 gz-common5 (5.2.1-2~focal) focal; urgency=medium
 
   * gz-common5 5.2.1-2 release
