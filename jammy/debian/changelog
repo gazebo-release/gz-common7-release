@@ -1,3 +1,9 @@
+gz-common5 (5.4.2-1~jammy) jammy; urgency=medium
+
+  * gz-common5 5.4.2-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 26 Sep 2023 14:50:42 -0500
+
 gz-common5 (5.4.1-1~jammy) jammy; urgency=medium
 
   * gz-common5 5.4.1-1 release
