@@ -8,6 +8,8 @@ override_dh_auto_configure:
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_install:
+	install -d debian/tmp/usr/share/gz/gz-common6/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-common6/
 	dh_install --
 	# need to remove files present in components
 	$(RM) debian/libgz-common6-core-dev/usr/include/gz/common*/ignition/common/av.hh
@@ -22,8 +24,12 @@ override_dh_install:
 	$(RM) debian/libgz-common6-core-dev/usr/include/gz/common*/gz/common/graphics.hh
 	$(RM) debian/libgz-common6-core-dev/usr/include/gz/common*/gz/common/io.hh
 	$(RM) debian/libgz-common6-core-dev/usr/include/gz/common*/gz/common/testing.hh
-	dh_missing --list-missing
 
 # test cannot run in parallel
 override_dh_auto_test:
 	dh_auto_test --max-parallel=1
+
+# Execute doc creation to export at least the doxygen tag file
+override_dh_auto_build:
+	dh_auto_build -- doc
+	dh_auto_build
