@@ -14,7 +14,6 @@ Build-Depends: cmake,
                libgz-utils3-dev,
                libtinyxml2-dev,
                uuid-dev,
-               libgts-dev,
                libavdevice-dev,
                libavformat-dev,
                libavcodec-dev,
@@ -196,7 +195,6 @@ Package: libgz-common6-graphics-dev
 Architecture: any
 Section: libdevel
 Depends: libassimp-dev,
-         libgts-dev,
          libgz-cmake4-dev,
          libgz-common6-core-dev (= ${binary:Version}),
          libgz-math8-dev,
