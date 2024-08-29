@@ -12,13 +12,15 @@ Build-Depends: cmake,
                libgz-cmake4-dev,
                libgz-math8-dev,
                libgz-utils3-dev,
+               libgz-utils3-log-dev,
                libtinyxml2-dev,
                uuid-dev,
                libavdevice-dev,
                libavformat-dev,
                libavcodec-dev,
                libswscale-dev,
-               libavutil-dev
+               libavutil-dev,
+               libspdlog-dev
 Vcs-Browser: https://github.com/gazebosim/gz-common
 Vcs-Git: https://github.com/gazebo-release/gz-common6-release
 Standards-Version: 4.5.1
@@ -43,7 +45,9 @@ Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
          libgz-utils3-dev,
+         libgz-utils3-log-dev,
          uuid-dev,
+         libspdlog-dev,
          libgz-common6 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
