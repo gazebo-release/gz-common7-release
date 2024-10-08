@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 }
 EOF
 
-g++ -o gztest gztest.c `pkg-config --cflags --libs gz-common6`
+g++ -o gztest gztest.c `pkg-config --cflags --libs gz-common7`
 echo "build: OK"
 [ -x gztest ]
 ./gztest
