@@ -1,4 +1,4 @@
-Source: gz-common6
+Source: gz-common7
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -22,11 +22,11 @@ Build-Depends: cmake,
                libavutil-dev,
                libspdlog-dev
 Vcs-Browser: https://github.com/gazebosim/gz-common
-Vcs-Git: https://github.com/gazebo-release/gz-common6-release
+Vcs-Git: https://github.com/gazebo-release/gz-common7-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libgz-common6
+Package: libgz-common7
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -40,7 +40,7 @@ Description: Collection of useful code used by robotics apps - Shared library
  .
  This package gathers the shared library
 
-Package: libgz-common6-core-dev
+Package: libgz-common7-core-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
@@ -48,7 +48,7 @@ Depends: libgz-cmake4-dev,
          libgz-utils3-log-dev,
          uuid-dev,
          libspdlog-dev,
-         libgz-common6 (= ${binary:Version}),
+         libgz-common7 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Core dev files
@@ -59,17 +59,17 @@ Description: Collection of useful code used by robotics apps - Core dev files
  .
  Core development files
 
-Package: libgz-common6-dev
+Package: libgz-common7-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-common6-core-dev (= ${binary:Version}),
-         libgz-common6-av-dev (= ${binary:Version}),
-         libgz-common6-events-dev (= ${binary:Version}),
-         libgz-common6-geospatial-dev (= ${binary:Version}),
-         libgz-common6-graphics-dev (= ${binary:Version}),
-         libgz-common6-io-dev (= ${binary:Version}),
-         libgz-common6-profiler-dev (= ${binary:Version}),
-         libgz-common6-testing-dev (= ${binary:Version}),
+Depends: libgz-common7-core-dev (= ${binary:Version}),
+         libgz-common7-av-dev (= ${binary:Version}),
+         libgz-common7-events-dev (= ${binary:Version}),
+         libgz-common7-geospatial-dev (= ${binary:Version}),
+         libgz-common7-graphics-dev (= ${binary:Version}),
+         libgz-common7-io-dev (= ${binary:Version}),
+         libgz-common7-profiler-dev (= ${binary:Version}),
+         libgz-common7-testing-dev (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Metapackage
@@ -80,7 +80,7 @@ Description: Collection of useful code used by robotics apps - Metapackage
  .
  Metapackage for development.
 
-Package: libgz-common6-av
+Package: libgz-common7-av
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -94,18 +94,18 @@ Description: Collection of useful code used by robotics apps - AV libraries
  .
  AV component of the library
 
-Package: libgz-common6-av-dev
+Package: libgz-common7-av-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
-         libgz-common6-core-dev (= ${binary:Version}),
+         libgz-common7-core-dev (= ${binary:Version}),
          libgz-utils3-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
          libswscale-dev,
          libavutil-dev,
-         libgz-common6-av (= ${binary:Version}),
+         libgz-common7-av (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - AV libraries
@@ -116,7 +116,7 @@ Description: Collection of useful code used by robotics apps - AV libraries
  .
  AV component of the library, development files
 
-Package: libgz-common6-events
+Package: libgz-common7-events
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -130,14 +130,14 @@ Description: Collection of useful code used by robotics apps - Events libraries
  .
  Events component of the library
 
-Package: libgz-common6-events-dev
+Package: libgz-common7-events-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
-         libgz-common6-core-dev (= ${binary:Version}),
+         libgz-common7-core-dev (= ${binary:Version}),
          libgz-utils3-dev,
          libgz-math8-dev,
-         libgz-common6-events (= ${binary:Version}),
+         libgz-common7-events (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Events dev files
@@ -148,7 +148,7 @@ Description: Collection of useful code used by robotics apps - Events dev files
  .
  Events component development files
 
-Package: libgz-common6-geospatial
+Package: libgz-common7-geospatial
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -162,15 +162,15 @@ Description: Collection of useful code used by robotics apps - Geospatial librie
  .
  Geospatial component of the library
 
-Package: libgz-common6-geospatial-dev
+Package: libgz-common7-geospatial-dev
 Architecture: any
 Section: libdevel
 Depends: libgdal-dev,
          libgz-cmake4-dev,
-         libgz-common6-graphics-dev (= ${binary:Version}),
+         libgz-common7-graphics-dev (= ${binary:Version}),
          libgz-math8-dev,
          libgz-utils3-dev,
-         libgz-common6-geospatial (= ${binary:Version}),
+         libgz-common7-geospatial (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Geospatial dev files
@@ -181,7 +181,7 @@ Description: Collection of useful code used by robotics apps - Geospatial dev fi
  .
  Geospatial developement files
 
-Package: libgz-common6-graphics
+Package: libgz-common7-graphics
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -195,16 +195,16 @@ Description: Collection of useful code used by robotics apps - Graphics librarie
  .
  Graphics component of the library
 
-Package: libgz-common6-graphics-dev
+Package: libgz-common7-graphics-dev
 Architecture: any
 Section: libdevel
 Depends: libassimp-dev,
          libgz-cmake4-dev,
-         libgz-common6-core-dev (= ${binary:Version}),
+         libgz-common7-core-dev (= ${binary:Version}),
          libgz-math8-dev,
          libgz-utils3-dev,
          libtinyxml2-dev,
-         libgz-common6-graphics (= ${binary:Version}),
+         libgz-common7-graphics (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Graphics dev files
@@ -215,7 +215,7 @@ Description: Collection of useful code used by robotics apps - Graphics dev file
  .
  Graphics component development files
 
-Package: libgz-common6-io
+Package: libgz-common7-io
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -229,14 +229,14 @@ Description: Collection of useful code used by robotics apps - I/O libraries
  .
  Graphics component of the library
 
-Package: libgz-common6-io-dev
+Package: libgz-common7-io-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
-         libgz-common6-core-dev (= ${binary:Version}),
+         libgz-common7-core-dev (= ${binary:Version}),
          libgz-math8-dev,
          libgz-utils3-dev,
-         libgz-common6-io (= ${binary:Version}),
+         libgz-common7-io (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - I/O dev files
@@ -247,7 +247,7 @@ Description: Collection of useful code used by robotics apps - I/O dev files
  .
  Graphics component development files
 
-Package: libgz-common6-profiler
+Package: libgz-common7-profiler
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -261,12 +261,12 @@ Description: Collection of useful code used by robotics apps - Profiler libs
  .
  Profiler component of the library
 
-Package: libgz-common6-profiler-dev
+Package: libgz-common7-profiler-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
-         libgz-common6-core-dev (= ${binary:Version}),
-         libgz-common6-profiler (= ${binary:Version}),
+         libgz-common7-core-dev (= ${binary:Version}),
+         libgz-common7-profiler (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Profiler dev file
@@ -277,7 +277,7 @@ Description: Collection of useful code used by robotics apps - Profiler dev file
  .
  Profiler development files
 
-Package: libgz-common6-testing
+Package: libgz-common7-testing
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -291,12 +291,12 @@ Description: Collection of useful code used by robotics apps - Testing libries
  .
  Testing component of the library
 
-Package: libgz-common6-testing-dev
+Package: libgz-common7-testing-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake4-dev,
          libgz-utils3-dev,
-         libgz-common6-testing (= ${binary:Version}),
+         libgz-common7-testing (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Collection of useful code used by robotics apps - Testing dev files
