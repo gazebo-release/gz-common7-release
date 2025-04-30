@@ -9,10 +9,10 @@ Build-Depends: cmake,
                libassimp-dev,
                libfreeimage-dev,
                libgdal-dev,
-               libgz-cmake4-dev,
-               libgz-math8-dev,
-               libgz-utils3-dev,
-               libgz-utils3-log-dev,
+               libgz-cmake5-dev,
+               libgz-math9-dev,
+               libgz-utils4-dev,
+               libgz-utils4-log-dev,
                libtinyxml2-dev,
                uuid-dev,
                libavdevice-dev,
@@ -43,9 +43,9 @@ Description: Collection of useful code used by robotics apps - Shared library
 Package: libgz-common7-core-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
-         libgz-utils3-dev,
-         libgz-utils3-log-dev,
+Depends: libgz-cmake5-dev,
+         libgz-utils4-dev,
+         libgz-utils4-log-dev,
          uuid-dev,
          libspdlog-dev,
          libgz-common7 (= ${binary:Version}),
@@ -97,9 +97,9 @@ Description: Collection of useful code used by robotics apps - AV libraries
 Package: libgz-common7-av-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
+Depends: libgz-cmake5-dev,
          libgz-common7-core-dev (= ${binary:Version}),
-         libgz-utils3-dev,
+         libgz-utils4-dev,
          libavdevice-dev,
          libavformat-dev,
          libavcodec-dev,
@@ -133,10 +133,10 @@ Description: Collection of useful code used by robotics apps - Events libraries
 Package: libgz-common7-events-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
+Depends: libgz-cmake5-dev,
          libgz-common7-core-dev (= ${binary:Version}),
-         libgz-utils3-dev,
-         libgz-math8-dev,
+         libgz-utils4-dev,
+         libgz-math9-dev,
          libgz-common7-events (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -166,10 +166,10 @@ Package: libgz-common7-geospatial-dev
 Architecture: any
 Section: libdevel
 Depends: libgdal-dev,
-         libgz-cmake4-dev,
+         libgz-cmake5-dev,
          libgz-common7-graphics-dev (= ${binary:Version}),
-         libgz-math8-dev,
-         libgz-utils3-dev,
+         libgz-math9-dev,
+         libgz-utils4-dev,
          libgz-common7-geospatial (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -199,10 +199,10 @@ Package: libgz-common7-graphics-dev
 Architecture: any
 Section: libdevel
 Depends: libassimp-dev,
-         libgz-cmake4-dev,
+         libgz-cmake5-dev,
          libgz-common7-core-dev (= ${binary:Version}),
-         libgz-math8-dev,
-         libgz-utils3-dev,
+         libgz-math9-dev,
+         libgz-utils4-dev,
          libtinyxml2-dev,
          libgz-common7-graphics (= ${binary:Version}),
          ${misc:Depends}
@@ -232,10 +232,10 @@ Description: Collection of useful code used by robotics apps - I/O libraries
 Package: libgz-common7-io-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
+Depends: libgz-cmake5-dev,
          libgz-common7-core-dev (= ${binary:Version}),
-         libgz-math8-dev,
-         libgz-utils3-dev,
+         libgz-math9-dev,
+         libgz-utils4-dev,
          libgz-common7-io (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
@@ -264,7 +264,7 @@ Description: Collection of useful code used by robotics apps - Profiler libs
 Package: libgz-common7-profiler-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
+Depends: libgz-cmake5-dev,
          libgz-common7-core-dev (= ${binary:Version}),
          libgz-common7-profiler (= ${binary:Version}),
          ${misc:Depends}
@@ -294,8 +294,8 @@ Description: Collection of useful code used by robotics apps - Testing libries
 Package: libgz-common7-testing-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake4-dev,
-         libgz-utils3-dev,
+Depends: libgz-cmake5-dev,
+         libgz-utils4-dev,
          libgz-common7-testing (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
