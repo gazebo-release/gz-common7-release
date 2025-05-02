@@ -8,8 +8,8 @@ override_dh_auto_configure:
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_install:
-	install -d debian/tmp/usr/share/gz/gz-common7/
-	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-common7/
+	install -d debian/tmp/usr/share/gz/gz-common/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-common/
 	dh_install --
 	# need to remove files present in components
 	$(RM) debian/libgz-common7-core-dev/usr/include/gz/common*/ignition/common/av.hh
