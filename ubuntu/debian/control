@@ -306,3 +306,75 @@ Description: Collection of useful code used by robotics apps - Testing dev files
  parsing 3D mesh files, managing console output, and using PID controllers.
  .
  Testing developement files
+
+Package: gz-jetty-common
+Depends: libgz-common7-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-av
+Depends: libgz-common7-av-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-core
+Depends: libgz-common7-core-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-events
+Depends: libgz-common7-events-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-geospatial
+Depends: libgz-common7-geospatial-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-graphics
+Depends: libgz-common7-graphics-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-io
+Depends: libgz-common7-io-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-profiler
+Depends: libgz-common7-profiler-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-common-testing
+Depends: libgz-common7-testing-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
