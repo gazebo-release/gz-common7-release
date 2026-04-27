@@ -1,3 +1,9 @@
+gz-common7 (7.2.0~pre1-1~noble) noble; urgency=medium
+
+  * gz-common7 7.2.0~pre1-1 release
+
+ -- Steve Peters <scpeters@intrinsic.ai>  Mon, 27 Apr 2026 20:07:29 +0000
+
 gz-common7 (7.1.1-1~noble) noble; urgency=medium
 
   * gz-common7 7.1.1-1 release
