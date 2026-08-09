@@ -1,52 +1,52 @@
-gz-common7 (7.3.0-2~resolute) noble; urgency=medium
+gz-common7 (7.3.0-2~resolute) resolute; urgency=medium
 
   * gz-common7 7.3.0-2 release
 
  -- Steve Peters <scpeters@intrinsic.ai>  Fri, 07 Aug 2026 20:43:29 +0000
 
-gz-common7 (7.3.0-1~resolute) noble; urgency=medium
+gz-common7 (7.3.0-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.3.0-1 release
 
  -- Addisu Z. Taddese <addisuzt@intrinsic.ai>  Tue, 21 Jul 2026 18:49:09 +0000
 
-gz-common7 (7.2.0-1~resolute) noble; urgency=medium
+gz-common7 (7.2.0-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.2.0-1 release
 
  -- Ian Chen <iche@intrinsic.ai>  Fri, 10 Jul 2026 21:45:10 +0000
 
-gz-common7 (7.1.1-1~resolute) noble; urgency=medium
+gz-common7 (7.1.1-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.1.1-1 release
 
  -- Addisu Z. Taddese <addisu@openrobotics.org>  Thu, 26 Feb 2026 01:31:05 +0000
 
-gz-common7 (7.1.0-1~resolute) noble; urgency=medium
+gz-common7 (7.1.0-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.1.0-1 release
 
  -- Addisu Z. Taddese <addisu@openrobotics.org>  Wed, 28 Jan 2026 20:28:14 +0000
 
-gz-common7 (7.0.1-1~resolute) noble; urgency=medium
+gz-common7 (7.0.1-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.0.1-1 release
 
  -- Ian Chen <ichen@openrobotics.org>  Wed, 21 Jan 2026 01:55:15 +0000
 
-gz-common7 (7.0.0-1~resolute) noble; urgency=medium
+gz-common7 (7.0.0-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.0.0-1 release
 
  -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 26 Sep 2025 16:01:50 -0500
 
-gz-common7 (7.0.0~pre2-1~resolute) noble; urgency=medium
+gz-common7 (7.0.0~pre2-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.0.0~pre2-1 release
 
  -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 23 Sep 2025 11:41:26 -0500
 
-gz-common7 (7.0.0~pre1-1~resolute) noble; urgency=medium
+gz-common7 (7.0.0~pre1-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.0.0~pre1-1 release
 
