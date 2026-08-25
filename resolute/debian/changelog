@@ -1,3 +1,9 @@
+gz-common7 (7.4.0-1~resolute) resolute; urgency=medium
+
+  * gz-common7 7.4.0-1 release
+
+ -- Carlos Agüero <caguero@honurobotics.com>  Tue, 25 Aug 2026 03:01:42 +0200
+
 gz-common7 (7.3.1-1~resolute) resolute; urgency=medium
 
   * gz-common7 7.3.1-1 release
